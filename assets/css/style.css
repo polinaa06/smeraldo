@@ -1,0 +1,1278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: .5s;
+}
+
+.section {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+@font-face {
+    font-family: 'Cormorant_SC';
+    src: url(../fonts/CormorantSC-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Cormorant_SC';
+    src: url(../fonts/CormorantSC-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond';
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond';
+    src: url(../fonts/CormorantGaramond-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Cormorant_Garamond';
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Cormorant_Infant';
+    src: url(../fonts/CormorantInfant-Regular.ttf);
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Cormorant_Garamond';
+}
+
+/* main */
+.main {
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../media/banner/fon.jpg);
+    background-size: cover;
+    font-family: 'Cormorant_SC';
+}
+
+.header {
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 90px;
+    height: 67px;
+}
+
+.logo h2 {
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.nav a:hover {
+    transform: scale(0.9);
+}
+
+.header-icon {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.burger-menu,
+#burger,
+[for=burger] {
+    display: none;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.banner-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-text h1 {
+    color: white;
+    font-size: 66px;
+    width: 650px;
+    padding-bottom: 30px;
+}
+
+.banner-text p {
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    width: 880px;
+    padding-bottom: 45px;
+    font-family: 'Cormorant_Garamond';
+}
+
+.btn {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 15px 120px;
+    background-color: white;
+    border: 2px solid white;
+    color: black;
+    display: block;
+}
+
+.btn:hover {
+    color: white;
+    background-color: transparent;
+}
+
+/* end main */
+
+/* catalog */
+.title h2 {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Cormorant_SC';
+    padding-bottom: 60px;
+}
+
+.catalog-items {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.item-img img {
+    width: 450px;
+    height: 500px;
+    padding-bottom: 20px;
+}
+
+.catalog-item h3 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Cormorant_Garamond';
+    padding-bottom: 15px;
+}
+
+.catalog-item p {
+    font-size: 32px;
+    font-family: 'Cormorant_Infant';
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.catalog-item .btn {
+    width: 450px;
+    font-size: 24px;
+    background-color: #4D4D4D;
+    color: white;
+    border: 1px solid #4D4D4D;
+}
+
+.catalog-item .btn:hover {
+    color: #4D4D4D;
+    background-color: transparent;
+}
+
+/* end catalog */
+
+/* sale */
+.sale {
+    background: url(../media/sale/foto.jpeg);
+    background-size: cover;
+    height: 700px;
+}
+
+.sale-content {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.sale-content h2 {
+    font-size: 36px;
+    font-family: 'Cormorant_SC';
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.sale-content p {
+    font-size: 26px;
+    font-family: 'Cormorant_Garamond';
+    width: 860px;
+    line-height: 1.4;
+    padding-bottom: 70px;
+}
+
+.sale-content h3 {
+    font-size: 32px;
+    font-family: 'Cormorant_Garamond';
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+form {
+    display: flex;
+    gap: 30px;
+}
+
+form input {
+    width: 460px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 28px;
+    font-family: 'Cormorant_Garamond';
+    font-weight: 500;
+    outline: none;
+}
+
+.sale .btn {
+    width: 200px;
+    font-size: 28px;
+    background-color: #4D4D4D;
+    color: white;
+    border: 1px solid #4D4D4D;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sale .btn:hover {
+    color: #4D4D4D;
+    background-color: transparent;
+}
+
+/* end sale */
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.footer-info {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer .logo h2 {
+    color: black;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-info p {
+    color: #717171;
+    font-family: 'Cormorant_SC';
+    font-size: 22px;
+}
+
+.footer-block {
+    text-align: left;
+}
+
+.footer-block h2 {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Cormorant_SC';
+    padding-bottom: 20px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-text a,
+.footer-text p {
+    font-size: 26px;
+    font-family: 'Cormorant_Garamond';
+    color: black;
+    cursor: pointer;
+}
+
+.footer-text p:hover {
+    color: #717171;
+}
+
+.footer-text a:hover {
+    color: #717171;
+}
+
+/* end footer */
+
+/* tovar */
+.tovar {
+    padding-bottom: 100px;
+}
+
+.tovar-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
+
+.tovar-nav a,
+.tovar-nav p {
+    font-size: 26px;
+    font-family: 'Cormorant_SC';
+    font-weight: 500;
+    color: black;
+}
+
+.tovar-nav a:hover {
+    color: #717171;
+}
+
+.tovar-block {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.tovar-img img {
+    width: 642px;
+    height: 714px;
+}
+
+.tovar-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.tovar-text {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+    flex-direction: column;
+}
+
+.tovar-text h2 {
+    font-size: 36px;
+    font-family: 'Cormorant_SC';
+    font-weight: 600;
+}
+
+.tovar-text p {
+    font-size: 38px;
+    font-weight: 500;
+    font-family: 'Cormorant_Infant';
+}
+
+.tovar-dop-info {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+    flex-direction: column;
+}
+
+.dop-text {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+}
+
+.dop-text p {
+    font-size: 30px;
+    font-family: 'Cormorant_Garamond';
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+.tovar-composition {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+    font-family: 'Cormorant_Garamond';
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+.tovar-composition h3 {
+    font-size: 32px;
+}
+
+.tovar-composition p {
+    font-size: 28px;
+    width: 580px;
+    color: #4D4D4D;
+    font-weight: 400;
+}
+
+.tovar .btn {
+    background-color: #4D4D4D;
+    color: white;
+    border: 1px solid #4D4D4D;
+    text-align: center;
+}
+
+.tovar .btn:hover {
+    color: #4D4D4D;
+    background-color: transparent;
+}
+
+/* end tovar */
+
+/* admin */
+.admin-body {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.admin-panel {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 470px;
+    background-color: white;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.admin .logo {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+}
+
+.admin .logo h2 {
+    color: black;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+}
+
+.user h2 {
+    font-size: 28px;
+    font-family: 'Cormorant_SC';
+    font-weight: 600;
+}
+
+.admin-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.admin-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 50px;
+    width: 470px;
+}
+
+.admin-link:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.admin-link a {
+    color: black;
+    font-size: 26px;
+    font-family: 'Cormorant_SC';
+}
+
+.exit {
+    margin-top: 50px;
+}
+
+.admin-block {
+    padding-left: 540px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.admin-title {
+    text-align: center;
+}
+
+.admin-title h2 {
+    font-size: 32px;
+    font-family: 'Cormorant_SC';
+    font-weight: 700;
+}
+
+.admin-title p {
+    font-size: 28px;
+    font-family: 'Cormorant_Garamond';
+}
+
+.admin h3 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Cormorant_SC';
+}
+
+.admin-items {
+    display: flex;
+    justify-content: start;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.admin-item {
+    width: 352px;
+}
+
+.admin-img img {
+    width: 352px;
+    height: 390px;
+}
+
+.admin-item h4 {
+    font-size: 28px;
+    font-family: 'Cormorant_Garamond';
+    padding: 15px 0;
+}
+
+.admin-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-text p {
+    font-size: 28px;
+    font-family: 'Cormorant_Infant';
+}
+
+.admin-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-icon a {
+    width: 30px;
+    height: 29px;
+}
+
+/* end admin */
+
+/* login */
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login .title h2 {
+    text-align: center;
+}
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-input label {
+    font-size: 30px;
+    color: black;
+}
+
+.login-input input {
+    font-size: 26px;
+    padding: 10px 15px;
+    width: 500px;
+    outline: none;
+}
+
+.login .btn {
+    background-color: #4D4D4D;
+    color: white;
+    border: 1px solid #4D4D4D;
+    text-align: center;
+    width: 500px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.login .btn:hover {
+    color: #4D4D4D;
+    background-color: transparent;
+}
+
+.reg-chekbox {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.login-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.login-text p {
+    font-size: 24px;
+    color: black;
+}
+
+.login-text a {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+
+.login-text a:hover {
+    color: #717171;
+}
+
+/* end login */
+
+/* add */
+.add {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.add-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-block .login-input label {
+    font-size: 30px;
+}
+
+.add-block .login-input input {
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+.add-block .login-input textarea {
+    width: 500px;
+    outline: none;
+    height: 45px;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid black;
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 50px;
+}
+
+.add-btn a {
+    padding: 10px 100px;
+    font-size: 24px;
+}
+
+/* end add */
+
+@media (max-width: 440px) {
+    .header {
+        padding: 15px 25px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header-icon {
+        display: none;
+    }
+    
+    [for=burger] {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 10px;
+    }
+
+    [for=burger]::before {
+        content: '≡';
+        font-size: 45px;
+        color: #ffffff;
+        position: fixed;
+        top: 10px;
+        right: 25px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background-color: white;
+        display: none;
+        padding-top: 40px;
+        z-index: 1000;
+    }
+
+    .nav a {
+        color: black;
+        font-size: 18px;
+    }
+
+    .nav .header-icon {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .nav .header-icon img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #burger:checked + [for=burger] + .nav {
+        display: flex;
+    }
+
+    #burger:checked + [for=burger]::before {
+        content: '×';
+        font-size: 50px;
+        font-weight: 300;
+        color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: 25px;
+    }
+
+
+    .header-icons {
+        display: none;
+    }
+
+    .icon-burger-menu {
+        display: block;
+    }
+
+    .logo {
+        gap: 3px;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 37px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .banner-text h1 {
+        width: 300px;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    .banner-text p {
+        width: 400px;
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+
+    .banner .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .py-120 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .catalog {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+        padding-bottom: 25px;
+    }
+
+    .catalog .title h2 {
+        padding-left: 15px;
+    }
+
+    .catalog-items {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-img {
+        width: 350px;
+        height: 430px;
+    }
+
+    .item-img img {
+        width: 350px;
+        height: 430px;
+        padding-bottom: 10px;
+    }
+
+    .catalog-item h3 {
+        font-size: 22px;
+        padding-bottom: 8px;
+    }
+
+    .catalog-item p {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .catalog-item .btn {
+        width: 350px;
+        font-size: 18px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .sale {
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 450px;
+        background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../media/sale/foto.jpeg);
+        background-position: right;
+        background-size: cover;
+        color: white;
+    }
+
+    .sale-content h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .sale-content p {
+        font-size: 18px;
+        width: 380px;
+        padding-bottom: 20px;
+    }
+
+    .sale-content h3 {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    .sale form input {
+        width: 270px;
+        padding: 5px 10px;
+        font-size: 22px;
+        height: 40px;
+        border: 1px solid white;
+    }
+
+    .sale form input::placeholder {
+        color: white;
+    }
+
+    .sale .btn {
+        height: 40px;
+        font-size: 22px;
+        padding: 5px;
+        background-color: white;
+        color: black;
+    }
+
+    .footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+    .footer .logo {
+        display: none;
+    }
+
+    .social {
+        gap: 5px;
+    }
+
+    .social img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer-block {
+        text-align: center;
+    }
+
+    .footer-block h2 {
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .footer-text {
+        align-items: center;
+    }
+
+    .footer-text p,
+    .footer-text a {
+        font-size: 20px;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-info {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-info p {
+        font-size: 18px;
+    }
+
+    .login-title {
+        text-align: center;
+    }
+
+    .login-form {
+        gap: 20px;
+    }
+
+    .login-input label {
+        font-size: 21px;
+    }
+
+    .login-input input {
+        width: 350px;
+        font-size: 18px;
+        padding: 7px 10px;
+    }
+
+    .login .btn {
+        width: 350px;
+        font-size: 18px;
+        margin-top: 30px;
+        padding: 7px 10px;
+    }
+
+    .login-text {
+        gap: 5px;
+        padding-top: 20px;
+    }
+
+    .login-text p,
+    .login-text a {
+        font-size: 18px;
+    }
+
+    .reg-chekbox p {
+        font-size: 16px;
+    }
+
+    .tovar {
+        padding-bottom: 40px;
+    }
+
+    .tovar-nav {
+        display: none;
+    }
+
+    .tovar-block {
+        gap: 15px;
+    }
+
+    .tovar-img img {
+        width: 100%;
+        height: 50%;
+    }
+
+    .tovar-info {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .tovar-text {
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .tovar-text h2 {
+        font-size: 24px;
+    }
+
+    .tovar-text p {
+        font-size: 24px;
+    }
+
+    .tovar-dop-info {
+        padding-bottom: 20px;
+    }
+
+    .dop-text {
+        gap: 10px;
+    }
+
+    .dop-text p {
+        font-size: 22px;
+    }
+
+    .tovar-composition {
+        gap: 5px;
+        padding-bottom: 35px;
+    }
+
+    .tovar-composition h3 {
+        font-size: 24px;
+    }
+
+    .tovar-composition p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .tovar .btn {
+        font-size: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .admin-panel {
+        display: none;
+        width: 70%;
+    }
+
+    #burger:checked + [for=burger] + .admin-panel {
+        display: flex;
+    }
+
+    .admin [for=burger]::before {
+        content: '≡';
+        font-size: 45px;
+        color: black;
+        position: fixed;
+        top: 17px;
+        right: 25px;
+    }
+
+    .admin #burger:checked + [for=burger]::before {
+        content: '×';
+        font-size: 50px;
+        font-weight: 300;
+        color: black;
+        position: fixed;
+        top: 0;
+        right: 25px;
+    }
+
+    .admin .logo {
+        padding-bottom: 40px;
+    }
+
+    .user {
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+
+    .user img {
+        width: 40px;
+    }
+
+    .user h2 {
+        font-size: 20px;
+    }
+
+    .admin-menu {
+        gap: 10px;
+    }
+
+    .admin-link {
+        gap: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 301px;
+    }
+
+    .admin-link img {
+        width: 24px;
+    }
+
+    .admin-link a {
+        font-size: 20px;
+    }
+
+    .exit {
+        margin-top: 30px;
+    }
+
+    .admin-block {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 30px;
+    }
+
+    .admin-title {
+        text-align: left;
+    }
+
+    .admin-title h2 {
+        font-size: 24px;
+    }
+
+    .admin-title p {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .admin h3 {
+        padding-top: 30px;
+        font-size: 24px;
+    }
+
+    .admin-items {
+        justify-content: center;
+    }
+
+    .admin-item h4 {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    .admin-text p {
+        font-size: 24px;
+    }
+
+    .admin-icon {
+        align-items: end;
+        gap: 10px;
+    }
+
+    .admin-icon a {
+        width: 23px;
+        height: 22px;
+    }
+
+    .admin-icon img {
+        width: 23px;    
+    }
+
+    .add {
+        gap: 20px;
+    }
+
+    .add-block .login-input label {
+        font-size: 22px;
+    }
+
+    .add-block .login-input input {
+        font-size: 16px;
+    }
+
+    .add-block .login-input textarea {
+        width: 350px;
+        height: 36px;
+    }
+
+    .add-btn {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .add-btn a {
+        font-size: 18px;
+    }
+}
